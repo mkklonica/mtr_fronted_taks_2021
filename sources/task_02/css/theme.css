@@ -1,0 +1,73 @@
+.ctn-preloader {
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  height: 100%;
+  justify-content: center;
+  -webkit-justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  background: #fff;
+}
+.ctn-preloader .animation-preloader {
+  position: absolute;
+  z-index: 100;
+}
+.ctn-preloader .animation-preloader .spinner {
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 3px solid rgba(0,0,0,0.06);
+  border-top-color: var(--p-color);
+  height: 70px;
+  margin: 0 auto;
+  width: 70px;
+}
+
+.ctn-preloader .loader-section {
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: calc(50% + 1px);
+}
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+@keyframes spinner {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ctn-preloader .animation-preloader .spinner {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ctn-preloader .animation-preloader .spinner {
+    height: 40px;
+    width: 40px;
+  }
+}
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeue.woff);
+    src: url(../fonts/HelveticaNeue.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+h1, h2, h3, p {
+    font-family: 'HelveticaNeue', sans-serif;
+}
+.dashed {
+ display: inline;
+ padding: 5px; 
+ border: 1px dashed blue;
+}
