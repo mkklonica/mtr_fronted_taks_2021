@@ -1,0 +1,5 @@
+//Code that isn't being used at all should be removed like surplus jquery or bootstrap.
+//Another thing that help us improve our code is compression all css file e.g. Gulp allow us
+to minify style file output (sass --watch style.scss:style.css --style compressed)
+//Thirdly, we can improve performance by optymize animation in our code or use @keyframe animation
+rather than jquery library
